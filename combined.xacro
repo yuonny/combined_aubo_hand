@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="hand_with_arm">
+
+  <xacro:include filename="$(find aubo_description)/aubo/aubo_i5.xacro" />
+  <xacro:include filename="$(find aubo_description)/hand/hand/Krysalis_Assem_w_tip_w_wrist.xacro" />
+
+  <xacro:aubo_i5L_robot prefix="" joint_limited="false"/>
+
+  <link name="world"/>
+
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="connect" type="fixed">
+    <parent link="wrist3_Link"/>
+    <child link="palm_intermediate_link"/>
+    <origin xyz="0 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+</robot>
