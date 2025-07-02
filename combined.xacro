@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="hand_with_arm">
 
-  <xacro:include filename="$(find aubo_description)/aubo/aubo_i5.xacro" />
-  <xacro:include filename="$(find aubo_description)/hand/hand/Krysalis_Assem_w_tip_w_wrist.xacro" />
-
-  <xacro:aubo_i5L_robot prefix="" joint_limited="false"/>
+  <xacro:include filename  = "/home/al/combined_aubo_hand/aubo/aubo_i5.xacro" />
+  <xacro:include filename= "/home/al/combined_aubo_hand/hand/Krysalis_Assem_w_tip_w_wrist.xacro" />
 
   <link name="world"/>
 
