@@ -6,11 +6,13 @@
 <xacro:include filename="/home/al/combined_aubo_hand/hand/Krysalis_Assem_w_tip_w_wrist.xacro"/> 
 ``` 
 Gives us direct access to the URDFs and Joints 
+
 3. To modify the code to work for any arm we need to do three things
 a. We first need to add the stl and xacro file of the arm they want to use
 b. change the first filename link 
 c. Modify the joint **connect** on the combined.xacro file to have the last link in the respective arm 
 4. To output a URDF from our combined.xacro all you need to do is type this command on terminal 
+
 ``` bash
 xacro combined.xacro > combined.urdf
 ```
