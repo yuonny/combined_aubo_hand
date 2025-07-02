@@ -14,8 +14,8 @@
 
   <joint name="connect" type="fixed">
     <parent link="wrist3_Link"/>
-    <child link="palm_intermediate_link"/>
-    <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    <child link="base_link_hand"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
 
 </robot>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <robot xmlns:xacro = "http://ros.org/wiki/xacro" name="Assem_w_tip_w_wrist">
-  <link name="base_link">
+  <link name="base_link_hand">
     <inertial>
       <origin xyz="0.00288917703400745 7.19298575992736E-08 0.0333943413697345" rpy="0 0 0" />
       <mass value="0.0405673074248041" />
@@ -10,7 +10,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link.STL" />
+        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link_hand.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -19,7 +19,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link.STL" />
+        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link_hand.STL" />
       </geometry>
     </collision>
   </link>
@@ -736,4 +736,4 @@
     <child link="T_IP_Tip" />
     <axis xyz="0 0 0" />
   </joint>
-<link name="palm_intermediate_link" /><joint name="Wrist_Flex_Extension" type="revolute"><parent link="base_link" /><child link="palm_intermediate_link" /><origin xyz="0.00633660798242791 0 0.108612" rpy="1.5707963267949 0 1.5707963267949" /><axis xyz="1 0 0" /><limit lower="-0.907" upper="0.907" effort="1" velocity="1" /></joint><joint name="Wrist_RUD" type="revolute"><parent link="palm_intermediate_link" /><child link="Palm" /><origin xyz="0 0 0" rpy="0 0 0" /><axis xyz="0 0 1" /><limit lower="-0.314" upper="0.314" effort="1" velocity="1" /></joint></robot>
+<link name="palm_intermediate_link" /><joint name="Wrist_Flex_Extension" type="revolute"><parent link="base_link_hand" /><child link="palm_intermediate_link" /><origin xyz="0.00633660798242791 0 0.108612" rpy="1.5707963267949 0 1.5707963267949" /><axis xyz="1 0 0" /><limit lower="-0.907" upper="0.907" effort="1" velocity="1" /></joint><joint name="Wrist_RUD" type="revolute"><parent link="palm_intermediate_link" /><child link="Palm" /><origin xyz="0 0 0" rpy="0 0 0" /><axis xyz="0 0 1" /><limit lower="-0.314" upper="0.314" effort="1" velocity="1" /></joint></robot>

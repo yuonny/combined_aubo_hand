@@ -13,7 +13,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/base_link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/base_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -35,7 +35,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/shoulder_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/shoulder_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -64,7 +64,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/upperArm_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/upperArm_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -93,7 +93,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/foreArm_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/foreArm_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -122,7 +122,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist1_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist1_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -151,7 +151,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist2_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist2_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -180,7 +180,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist3_Link.DAE"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist3_Link.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -206,7 +206,7 @@
     <child link="base_link"/>
     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
   </joint>
-  <link name="base_link">
+  <link name="base_link_hand">
     <inertial>
       <origin rpy="0 0 0" xyz="0.00288917703400745 7.19298575992736E-08 0.0333943413697345"/>
       <mass value="0.0405673074248041"/>
@@ -215,7 +215,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link.STL"/>
+        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link_hand.STL"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -224,7 +224,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link.STL"/>
+        <mesh filename="package://Assem_w_tip_w_wrist/meshes/base_link_hand.STL"/>
       </geometry>
     </collision>
   </link>
@@ -943,7 +943,7 @@
   </joint>
   <link name="palm_intermediate_link"/>
   <joint name="Wrist_Flex_Extension" type="revolute">
-    <parent link="base_link"/>
+    <parent link="base_link_hand"/>
     <child link="palm_intermediate_link"/>
     <origin rpy="1.5707963267949 0 1.5707963267949" xyz="0.00633660798242791 0 0.108612"/>
     <axis xyz="1 0 0"/>
@@ -964,8 +964,7 @@
   </joint>
   <joint name="connect" type="fixed">
     <parent link="wrist3_Link"/>
-    <child link="palm_intermediate_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0.02"/>
+    <child link="base_link_hand"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 </robot>
-
