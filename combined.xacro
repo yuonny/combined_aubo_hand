@@ -4,14 +4,6 @@
   <xacro:include filename  = "/home/al/combined_aubo_hand/aubo/aubo_i5.xacro" />
   <xacro:include filename= "/home/al/combined_aubo_hand/hand/Krysalis_Assem_w_tip_w_wrist.xacro" />
 
-  <link name="world"/>
-
-  <joint name="world_joint" type="fixed">
-    <parent link="world"/>
-    <child link="base_link"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
-
   <joint name="connect" type="fixed">
     <parent link="wrist3_Link"/>
     <child link="base_link_hand"/>
