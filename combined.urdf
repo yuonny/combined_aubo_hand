@@ -13,7 +13,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/base_link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/base_link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -35,7 +35,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/shoulder_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/shoulder_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -64,7 +64,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/upperArm_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/upperArm_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -93,7 +93,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/foreArm_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/foreArm_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -122,7 +122,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist1_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist1_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -151,7 +151,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist2_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist2_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -180,7 +180,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist3_Link.STL"/>
+        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist3_Link.DAE"/>
       </geometry>
       <material name="">
         <color rgba="1 1 1 1"/>
@@ -956,15 +956,10 @@
     <axis xyz="0 0 1"/>
     <limit effort="1" lower="-0.314" upper="0.314" velocity="1"/>
   </joint>
-  <link name="world"/>
-  <joint name="world_joint" type="fixed">
-    <parent link="world"/>
-    <child link="base_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
-  </joint>
   <joint name="connect" type="fixed">
     <parent link="wrist3_Link"/>
     <child link="base_link_hand"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
   </joint>
 </robot>
+
