@@ -43,3 +43,12 @@ xacro combined.xacro > combined.urdf
 ```
 
 Sidenote: Don't know if you need ROS when doing this lowkely but I assume so 
+
+## Pre-Processing and Simulation
+Theres a good chance that the outputted urdf will have issues, assumably with the type of file or the mesh path. So to fix this I have a python script titled pre_processing.py that updates the mesh fileanme. To check if the outputted urdf is loading correctly, I have a novel pybullet simulation you can run to see, named pysim.py.
+
+``` bash
+python pre_processing.py
+python pysim.py
+```
+
