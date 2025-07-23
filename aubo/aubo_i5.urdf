@@ -10,7 +10,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/base_link.DAE" />
+        <mesh filename="base_link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -19,7 +19,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/base_link.STL" />
+        <mesh filename="base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -33,7 +33,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/shoulder_Link.DAE" />
+        <mesh filename="shoulder_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -42,7 +42,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/shoulder_Link.STL" />
+        <mesh filename="shoulder_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -64,7 +64,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/upperArm_Link.DAE" />
+        <mesh filename="upperArm_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -73,7 +73,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/upperArm_Link.STL" />
+        <mesh filename="upperArm_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -95,7 +95,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/foreArm_Link.DAE" />
+        <mesh filename="foreArm_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -104,7 +104,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/foreArm_Link.STL" />
+        <mesh filename="foreArm_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -126,7 +126,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist1_Link.DAE" />
+        <mesh filename="wrist1_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -135,7 +135,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/wrist1_Link.STL" />
+        <mesh filename="wrist1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -157,7 +157,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist2_Link.DAE" />
+        <mesh filename="wrist2_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -166,7 +166,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/wrist2_Link.STL" />
+        <mesh filename="wrist2_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -188,7 +188,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/visual/wrist3_Link.DAE" />
+        <mesh filename="wrist3_Link.STL" />
       </geometry>
       <material name="">
         <color rgba="1 1 1 1" />
@@ -197,7 +197,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://aubo_description/meshes/aubo_i5/collision/wrist3_Link.STL" />
+        <mesh filename="wrist3_Link.STL" />
       </geometry>
     </collision>
   </link>
